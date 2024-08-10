@@ -30,10 +30,8 @@ function sort_2way($array, $order)
     }
 }
 
-sort_2way($arrays, $order);
-
-
-sort_2way($arrays, $rsort);
+sort_2way($arrays, true);
+sort_2way($arrays, false);
 
 ?>
   </p>

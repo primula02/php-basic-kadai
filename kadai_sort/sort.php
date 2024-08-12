@@ -8,8 +8,8 @@
 <body>
     <p>
     <?php
-$order = [true, false];
-$arrays = $num;
+    $order = [true, false];
+    $arrays = $num;
 
 function sort_2way($array, $order)
 {
@@ -17,21 +17,21 @@ function sort_2way($array, $order)
 
     if ($order) {
         echo "昇順にソートします。<br>";
-        sort($nums);
+        sort($nums, $array);
         foreach ($nums as $num) {
             echo $num . '<br>';
         }
     } else {
         echo "降順にソートします。<br>";
-        rsort($nums);
+        rsort($nums, $array);
         foreach ($nums as $num) {
             echo $num . '<br>';
         }
     }
 }
 
-sort_2way($arrays, true);
-sort_2way($arrays, false);
+sort_2way($array, $order);
+sort_2way($array, $order);
 
 ?>
   </p>

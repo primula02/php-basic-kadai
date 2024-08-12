@@ -12,34 +12,30 @@ ini_set('display_errors', "On");
 
 
 <?php
-   $nums = [];
-   $arrays = $nums;
-
+    $nums = [15, 4, 18, 23, 10];
 
 function sort_2way($array, $order)
 {
-    $nums = [15, 4, 18, 23, 10];
     if ($order) {
         echo "昇順にソートします。<br>";
-        sort($nums);
-        foreach ($nums as $num) {
+        sort($array);
+        foreach ($array as $num) {
             echo $num . '<br>';
         }
     } else {
         echo "降順にソートします。<br>";
-        rsort($nums);
-        foreach ($nums as $num) {
+        rsort($array);
+        foreach ($array as $num) {
             echo $num . '<br>';
         }
     }
 }
 
-
-sort_2way($arrays,true);
-sort_2way($arrays, false);
-
+sort_2way($nums, true);
+sort_2way($nums, false);
 ?>
-  </p>
+    </p>
+
 </body>
 
 </html>
